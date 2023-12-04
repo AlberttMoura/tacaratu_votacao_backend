@@ -29,7 +29,6 @@ namespace TacaratuBackend.Controllers
     [HttpGet]
     public List<VotacaoOutputDTO> ResultadosVotacao()
     {
-      Console.WriteLine("Oi");
       return this._votacaoService.ListarVotacao();
     }
   }
