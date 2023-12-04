@@ -1,0 +1,6 @@
+@TacaratuBackend_HostAddress = http://localhost:5120
+
+GET {{TacaratuBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
