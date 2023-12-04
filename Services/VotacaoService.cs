@@ -31,7 +31,7 @@ namespace TacaratuBackend.Services
 
     public Votacao? VotacaoSave(VotacaoSaveDTO novaVotacaoDTO)
     {
-      Votacao? votacao = this._votacaoRepository.Save(new Votacao { Cpf = novaVotacaoDTO.Cpf, AppId = novaVotacaoDTO.AppNameId });
+      Votacao? votacao = this._votacaoRepository.Save(new Votacao { AppId = novaVotacaoDTO.AppNameId });
       return votacao;
     }
   }

@@ -19,16 +19,17 @@ namespace TacaratuBackend.Controllers
     //   return votacoes;
     // }
 
-    [HttpPost("/")]
+    [HttpPost("")]
     public Votacao? VotacaoSave(VotacaoSaveDTO novaVotacaoDTO)
     {
       Votacao? votacao = this._votacaoService.VotacaoSave(novaVotacaoDTO);
       return votacao;
     }
 
-    [HttpGet("")]
+    [HttpGet]
     public List<VotacaoOutputDTO> ResultadosVotacao()
     {
+      Console.WriteLine("Oi");
       return this._votacaoService.ListarVotacao();
     }
   }

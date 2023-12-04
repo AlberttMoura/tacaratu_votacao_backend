@@ -10,9 +10,6 @@ namespace TacaratuBackend.Models
     [Column("id")]
     public int Id { get; set; }
 
-    [Column("cpf")]
-    public string Cpf { get; set; } = "";
-
     [Column("nome_app_id")]
     public int AppId { get; set; }
   }
